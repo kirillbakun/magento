@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_Crud>
+            <version>0.1.0</version>
+        </Demo_Crud>
+    </modules>
+    <global>
+        <blocks>
+            <demo_crud>
+                <class>Demo_Crud_Block</class>
+            </demo_crud>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <Demo_Crud>
+                <use>standard</use>
+                <args>
+                    <module>Demo_Crud</module>
+                    <frontName>crud</frontName>
+                </args>
+            </Demo_Crud>
+        </routers>
+        <layout>
+            <updates>
+                <demo_crud>
+                    <file>demo/crud.xml</file>
+                </demo_crud>
+            </updates>
+        </layout>
+    </frontend>
+</config>
