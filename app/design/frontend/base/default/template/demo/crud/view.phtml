@@ -1,0 +1,8 @@
+<?php foreach($this->getCollection() as $crud): ?>
+    <div class="crud-item">
+        <h4>
+            <a href="<?php echo $this->getRowUrl($crud); ?>"><?php echo $crud->getName(); ?></a>
+        </h4>
+        <p><?php echo $crud->getDscr(); ?></p>
+    </div>
+<?php endforeach; ?>
