@@ -69,4 +69,24 @@
             </updates>
         </layout>
     </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <demo_crud>
+                    <file>demo/crud.xml</file>
+                </demo_crud>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <demo_crud before="Mage_Adminhtml">Demo_Crud_Adminhtml</demo_crud>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

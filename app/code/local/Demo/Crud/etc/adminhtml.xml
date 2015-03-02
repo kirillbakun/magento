@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <demo_crud translate="title" module="demo_crud">
+            <title>Crud</title>
+            <sort_order>55</sort_order>
+            <action>adminhtml/crud</action>
+        </demo_crud>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <demo_crud translate="title" module="demo_crud">
+                        <title>Demo</title>
+                        <sort_order>0</sort_order>
+                    </demo_crud>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

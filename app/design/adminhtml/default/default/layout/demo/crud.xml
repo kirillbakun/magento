@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_crud_index>
+        <reference name="content">
+            <block type="demo_crud/adminhtml_crud" name="crud.grid_container"/>
+        </reference>
+    </adminhtml_crud_index>
+
+    <adminhtml_crud_new>
+        <update handle="adminhtml_crud_edit"/>
+    </adminhtml_crud_new>
+
+    <adminhtml_crud_edit>
+        <reference name="content">
+            <block type="demo_crud/adminhtml_edit" name="crud.edit"/>
+        </reference>
+    </adminhtml_crud_edit>
+</layout>
