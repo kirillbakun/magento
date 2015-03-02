@@ -2,7 +2,13 @@
 <layout version="0.1.0">
     <demo_crud_index_index>
         <reference name="content">
-            <block type="demo_crud/content" name="quotes.all" />
+            <block type="demo_crud/content" name="crud.all" />
         </reference>
     </demo_crud_index_index>
+
+    <demo_crud_index_view>
+        <reference name="content">
+            <block type="demo_crud/crud_content" name="crud.item"/>
+        </reference>
+    </demo_crud_index_view>
 </layout>

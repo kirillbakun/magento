@@ -11,6 +11,45 @@
                 <class>Demo_Crud_Block</class>
             </demo_crud>
         </blocks>
+        <helpers>
+            <demo_crud>
+                <class>Demo_Crud_Helper</class>
+            </demo_crud>
+        </helpers>
+        <models>
+            <demo_crud>
+                <class>Demo_Crud_Model</class>
+                <resourceModel>crud_resource</resourceModel>
+            </demo_crud>
+            <crud_resource>
+                <class>Demo_Crud_Model_Resource</class>
+                <entities>
+                    <crud>
+                        <table>demo_crud</table>
+                    </crud>
+                </entities>
+            </crud_resource>
+        </models>
+        <resources>
+            <demo_crud_setup>
+                <setup>
+                    <module>Demo_Crud</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </demo_crud_setup>
+            <demo_crud_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </demo_crud_write>
+            <demo_crud_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </demo_crud_read>
+        </resources>
     </global>
     <frontend>
         <routers>
