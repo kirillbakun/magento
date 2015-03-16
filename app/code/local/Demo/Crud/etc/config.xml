@@ -7,65 +7,65 @@
     </modules>
     <global>
         <blocks>
-            <demo_crud>
+            <crud>
                 <class>Demo_Crud_Block</class>
-            </demo_crud>
+            </crud>
         </blocks>
         <helpers>
-            <demo_crud>
+            <crud>
                 <class>Demo_Crud_Helper</class>
-            </demo_crud>
+            </crud>
         </helpers>
         <models>
-            <demo_crud>
+            <crud>
                 <class>Demo_Crud_Model</class>
-                <resourceModel>crud_resource</resourceModel>
-            </demo_crud>
-            <crud_resource>
-                <class>Demo_Crud_Model_Resource</class>
+                <resourceModel>crud_mysql4</resourceModel>
+            </crud>
+            <crud_mysql4>
+                <class>Demo_Crud_Model_Mysql4</class>
                 <entities>
                     <crud>
-                        <table>demo_crud</table>
+                        <table>crud</table>
                     </crud>
                 </entities>
-            </crud_resource>
+            </crud_mysql4>
         </models>
         <resources>
-            <demo_crud_setup>
+            <crud_setup>
                 <setup>
                     <module>Demo_Crud</module>
                 </setup>
                 <connection>
                     <use>core_setup</use>
                 </connection>
-            </demo_crud_setup>
-            <demo_crud_write>
+            </crud_setup>
+            <crud_write>
                 <connection>
                     <use>core_write</use>
                 </connection>
-            </demo_crud_write>
-            <demo_crud_read>
+            </crud_write>
+            <crud_read>
                 <connection>
                     <use>core_read</use>
                 </connection>
-            </demo_crud_read>
+            </crud_read>
         </resources>
     </global>
     <frontend>
         <routers>
-            <Demo_Crud>
+            <Crud>
                 <use>standard</use>
                 <args>
                     <module>Demo_Crud</module>
                     <frontName>crud</frontName>
                 </args>
-            </Demo_Crud>
+            </Crud>
         </routers>
         <layout>
             <updates>
-                <demo_crud>
-                    <file>demo/crud.xml</file>
-                </demo_crud>
+                <crud>
+                    <file>crud.xml</file>
+                </crud>
             </updates>
         </layout>
     </frontend>
