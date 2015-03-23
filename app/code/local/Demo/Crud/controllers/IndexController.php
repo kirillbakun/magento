@@ -12,8 +12,6 @@ class Demo_Crud_IndexController extends Mage_Core_Controller_Front_Action
         }
 
         $this->loadLayout();
-        $a = $this->getLayout();
-        $b = $a->getBlock('crud.item');
         $this->getLayout()->getBlock('crud.item')->setCrudId($crud_id);
         $this->renderLayout();
     }

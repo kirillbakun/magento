@@ -1,5 +1,5 @@
 <?php
-$installer = $this;
+/*$installer = $this;
 $installer->startSetup();
 
 $installer->run("
@@ -11,4 +11,6 @@ $installer->run("
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ");
 
-$installer->endSetup();
+$installer->endSetup();*/
+
+$a = 1;
