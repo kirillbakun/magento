@@ -16,6 +16,6 @@
         }
 
         public function getCollection() {
-            return Mage::getModel('demo_crud/crud')->getCollection();
+            return Mage::getModel('crud/crud')->getCollection();
         }
     }

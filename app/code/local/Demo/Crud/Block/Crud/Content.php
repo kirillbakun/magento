@@ -6,6 +6,6 @@ class Demo_Crud_Block_Crud_Content extends Mage_Core_Block_Template
     }
 
     public function getCrud() {
-        return Mage::getModel('demo_crud/crud')->load($this->getCrudId());
+        return Mage::getModel('crud/crud')->load($this->getCrudId());
     }
 }
